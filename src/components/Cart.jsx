@@ -26,9 +26,9 @@ const Cart = () => {
 
   return (
     <>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12" style={{ textAlign: "center" }}>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12" style={{ textAlign: "center" }}>
             {/* 사용자 이름과 나이 보여주기 */}
             <h5 style={{ padding: "50px" }}>
               {/* {name} {age}의 장바구니/ */}
