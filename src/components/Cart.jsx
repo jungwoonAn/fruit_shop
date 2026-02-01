@@ -54,7 +54,7 @@ const Cart = () => {
                     <td>
                       <Link to={`/detail/${id}`}>
                         <img
-                          src={process.env.PUBLIC_URL + imgUrl}
+                          src={import.meta.env.BASE_URL + imgUrl}
                           style={smallProdcuctStyle}
                         />
                       </Link>

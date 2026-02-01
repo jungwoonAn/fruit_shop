@@ -6,7 +6,7 @@ const ComVeggie = (props) => {
 
   return (
     <div className="col-md-4" style={{ marginBottom: "50px" }}>
-      <img src={process.env.PUBLIC_URL + imgUrl} width="80%" alt="" />
+      <img src={import.meta.env.BASE_URL + imgUrl} width="80%" alt="" />
       <h5 style={{ marginTop: "10px" }}>{title}</h5>
       <span>{content}</span>
       <p>{price}</p>

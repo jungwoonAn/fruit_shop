@@ -24,9 +24,9 @@ export const { changeName, increase } = user.actions;
 const cart = createSlice({
   name: "cart",
   initialState: [
-    { id: 1, imgurl: "fruit1.jpg", name: "수박", count: 2 },
-    { id: 2, imgurl: "fruit2.jpg", name: "참외", count: 1 },
-    { id: 3, imgurl: "fruit3.jpg", name: "사과", count: 1 },
+    { id: 1, imgUrl: "/img/fruit1.jpg", name: "수박", count: 2 },
+    { id: 2, imgUrl: "/img/fruit2.jpg", name: "참외", count: 1 },
+    { id: 3, imgUrl: "/img/fruit3.jpg", name: "사과", count: 1 },
   ],
   reducers: {
     // 상품 수량 1개 늘리기

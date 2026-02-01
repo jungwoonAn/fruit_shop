@@ -8,7 +8,7 @@ const Product = (props) => {
 
     return (
         <div className="col-md-4 mb-3" onClick={()=>{navigate('/detail/' + id)}}>
-            <img src={process.env.PUBLIC_URL + imgUrl} width="80%" alt="" />
+            <img src={import.meta.env.BASE_URL + imgUrl} width="80%" alt="" />
             <h4 className='mt-2'>{title}</h4>
             <p>{content}</p>
             <span>{price}</span>

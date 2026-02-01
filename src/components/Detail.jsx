@@ -50,7 +50,7 @@ const Detail = (props) => {
 
   const { id, imgUrl, title, content, price } = selproduct;
 
-  console.log("내가 선택한 상품은: " + id + " " + title);
+  console.log("내가 선택한 상품은: " + id + " " + title + imgUrl);
 
   return (
     <div className={"container text-center start " + fade2}>
@@ -60,7 +60,7 @@ const Detail = (props) => {
 
       <div className="row">
         <div className="col-md-6">
-          <img src={process.env.PUBLIC_URL + imgUrl} width="100%" alt={title} />
+          <img src={import.meta.env.BASE_URL + imgUrl} width="100%" alt={title} />
         </div>
         <div className="col-md-6">
           <h4 className="pt-5">{title}</h4>
